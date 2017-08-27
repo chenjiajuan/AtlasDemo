@@ -7,3 +7,8 @@
 /build
 /captures
 .externalNativeBuild
+**.iml
+.gradle/
+out/
+build/
+
