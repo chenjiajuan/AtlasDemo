@@ -1,0 +1,30 @@
+apply from: "config.gradle"
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            url "http://maven.aliyun.com/nexus/content/groups/public"
+        }
+
+    }
+    configurations.all {
+        resolutionStrategy.cacheDynamicVersionsFor 0, 'seconds'
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath "com.taobao.android:atlasplugin:2.3.3.rc1"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

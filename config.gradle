@@ -1,0 +1,22 @@
+
+ext {
+    android = [
+            compileSdkVersion: 25,
+            buildToolsVersion: "25.0.3",
+            minSdkVersion    : 15,
+            targetSdkVersion : 25,
+            versionCode      : 2100400800
+    ]
+
+    dependencies = [
+            appcompatV7: 'com.android.support:appcompat-v7:25.3.1',
+            recyclerviewV7: 'com.android.support:recyclerview-v7:24.0.0',
+            junit      : 'junit:junit:4.12',
+            atlasupdate: 'com.taobao.android:atlasupdate:1.1.4.10@aar',
+            atlas_core: 'com.taobao.android:atlas_core:5.0.7.38@aar',
+            atlasplugin: 'com.taobao.android:atlasplugin:2.3.3.rc1',
+            fastjson: 'com.alibaba:fastjson:1.1.45.android@jar'
+    ]
+}
+
+
